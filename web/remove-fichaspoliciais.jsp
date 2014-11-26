@@ -35,7 +35,18 @@
             <div class="col-sm-offset-1 col-sm-10">
                 <h1>Remoção de Meliantes</h1>
 
-                <table class="table">                  
+                <table class="table">       
+                    <tr>
+                        <td><b>Nome</b></td>
+                        <td><b>CPF</b></td>
+                        <td><b>Endereço</b></td>
+                        <td><b>Delito</b></td>
+                        <td><b>Data do Crime</b></td>
+                        <td><b>Hora</b></td>
+                        <td><b>Local</b></td>
+                        <td><b>Estado</b></td>
+                        <td><b>Foto</b></td> 
+                    </tr>
                     <c:forEach var ="meliante" items ="${meliante}">
                         <tr>                            
                             <td><a href = "mvc?logica=RemoveMelianteLogica&id=${meliante.id}">${meliante.id} - Remover</a></td>

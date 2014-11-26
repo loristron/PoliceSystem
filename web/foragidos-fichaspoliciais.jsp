@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Lista Foragidos</title>
-         <!-- Latest compiled and minified CSS -->
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
         <!-- Optional theme -->
@@ -30,7 +30,18 @@
             <div class="col-sm-offset-1 col-sm-10">
                 <h1>Foragidos</h1>
 
-                <table class="table table-hover">                  
+                <table class="table table-hover">      
+                    <tr>
+                        <td><b>Nome</b></td>
+                        <td><b>CPF</b></td>
+                        <td><b>Endereço</b></td>
+                        <td><b>Delito</b></td>
+                        <td><b>Data do Crime</b></td>
+                        <td><b>Hora</b></td>
+                        <td><b>Local</b></td>
+                        <td><b>Estado</b></td>
+                        <td><b>Foto</b></td> 
+                    </tr>
                     <c:forEach var ="meliante" items ="${meliante}">
                         <tr>                            
                             <td>${meliante.nome}<br><br></td >
